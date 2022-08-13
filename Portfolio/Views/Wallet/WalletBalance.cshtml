@@ -1,0 +1,86 @@
+﻿
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="WalletBalance" asp-controller="Wallet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">Customer Name</label>
+                <input name="customerName" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Microsoft Stock</label>
+                <input name="microsoft" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Etherium stock</label>
+                <input name="etherium" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Luna</label>
+                <input name="luna" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Tesla</label>
+                <input name="tesla" class="form-control" />
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Get Balance" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+ 
+    @*<table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Wallet.CustomerName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Wallet.WalletValue)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Code)
+                </th>  
+            </tr>
+        </thead>
+        <tbody>
+            
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.Wallet.CustomerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.Wallet.WalletValue)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.Message)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.Code)
+                    </td>
+                    
+                </tr>
+            
+        </tbody>
+    </table>*@
+
+
+</div>

@@ -1,0 +1,39 @@
+﻿@model WalletResponse
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wallet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Code)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Wallet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Code)
+            </td>
+
+        </tr>
+
+    </tbody>
+</table>
