@@ -26,22 +26,22 @@ namespace Portfolio.Controllers
             return View();
         }
 
-
+        //Service
         public decimal ConvertStock(decimal stockValue, int stockType)
         { 
-            if(stockType == 1)//Eth
+            if(stockType == 1)//Eth to usdt
             {
-                return stockValue * 67;
+                return stockValue * 1989;
 
-            }else if(stockType == 2) // Luna
+            }else if(stockType == 2) // Luna to usdt
             {
-                return stockValue * 100;
-            }else if(stockType == 3) //Microsoft
+                return stockValue * 2;
+            }else if(stockType == 3) //Microsoft to usdt
             {
-                return stockValue * 155/100;
-            }else if (stockType == 4)//Tesla
+                return stockValue * 291;
+            }else if (stockType == 4)//Tesla to usdt
             {
-                return stockValue * 89;
+                return stockValue * 900;
             }
 
 
@@ -66,7 +66,6 @@ namespace Portfolio.Controllers
                 Wallet wallet = new Wallet()
                 {
                     CustomerName = customerName,
-                    //Stocks = stocks,
                     WalletValue = (double)walletBalance
                 };
 
