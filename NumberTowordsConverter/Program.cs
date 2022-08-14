@@ -31,7 +31,7 @@ namespace NumberTowordsConverter
             }
             catch (Exception e)
             {
-                // TODO: handle exception  
+                Console.WriteLine(e.Message);
             }
             return "";
         }
